@@ -1105,8 +1105,8 @@ def downloadsocks(choice):
     if "4" == "4":
         f = open(out_file, 'wb')
         try:
-            r = requests.get("https://midokuriserver.com/proxytool/",
-                             timeout=500)
+            r = requests.get("https://api.good-proxies.ru/get.php?count=&ping=8000&time=600&works=50&key=3269305ce8094af10e5933fe67db8529",
+                             timeout=8000)
             f.write(r.content)
         except:
             pass
